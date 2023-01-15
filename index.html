@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="position">
+      <div class="container">
+        <div class="todoCard">
+          <h3 class="todoHeader">Toto App</h3>
+          <form class="todo-form">
+            <input
+              type="text"
+              placeholder="Add your new todo"
+              class="input_todo"
+              id="input_todo"
+            />
+            <button type="submit" class="plus" id="add-button">
+              <i class="fas fa-plus"></i>
+            </button>
+          </form>
+          <ul class="todo-list">
+            <template id="todo-list-template">
+              <li class="todo_item">
+                <div class="todo_item__span" max-width="360px">
+                  Complate a preveious task
+                </div>
+
+                <span class="trash"><i class="fas fa-trash"></i></span>
+              </li>
+            </template>
+          </ul>
+          <div class="todo_news">
+            <p class="todo_number">
+              You have <span class="answers-number"></span> pending tasks
+            </p>
+            <button class="todo_list__clear">Clear All</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
